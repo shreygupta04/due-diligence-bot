@@ -1,0 +1,75 @@
+lead_researcher_task:
+  description: >
+    Conduct a comprehensive analysis of {company}'s business model, identifying the 
+    main problem they aim to solve within their industry. Research previous approaches
+    to solving this problem and evaluate how {company}'s solution is similar or different 
+    from these approaches.
+    
+  expected_output: >
+    A report summarizing {company}'s business model and the unique aspects of their 
+    approach. Include a comparison of 5 past solutions with pros and cons, and highlight 
+    how {company} differentiates itself in the market.
+
+lead_sentiment_task:
+  description: >
+    Gather data from sources like Twitter, SERP, and industry-related forums about
+    {company}. Evaluate public perception, user feedback, and key sentiments 
+    (positive and negative) about their product and team, focusing on data from the 
+    last 12 months.
+    
+  expected_output: >
+    A report with a summary of the general perception, including notable feedback
+    trends. Include 5 primary themes observed and at least 3 examples of public comments, 
+    with analysis on the general sentiment towards the product. Specifically write about if 
+    it is public, negative, or neutral.
+
+personal_relations_task:
+  description: >
+    Research public information on {company}'s founders, focusing on their career 
+    history, recent public posts, and significant achievements. Use LinkedIn and other 
+    available online sources to gather insights into their professional focus and 
+    leadership style. Include links to their linkedin pages and any other
+    significant links.
+    
+  expected_output: >
+    A summary profile for each founder, including their professional background, 
+    recent online activity, and notable career accomplishments. Include 3 key insights 
+    per founder about their leadership approach and interests.
+
+product_specialist_task:
+  description: >
+    Identify the top trends, emerging challenges, and potential opportunities within 
+    {company}'s industry. Analyze how {company}'s product aligns with these trends, and 
+    provide insights into any competitive advantages or gaps.
+    
+  expected_output: >
+    A detailed report on 3 major trends in the industry, 2 significant challenges, and 2 
+    potential opportunities that {company} could leverage. Include a product analysis 
+    on how {company} is adapting or innovating based on these insights.
+
+document_coordinator_task:
+  description: >
+    Compile all agent reports into a structured document, emphasizing the most impactful 
+    insights and key points. Ensure the document is detailed, yet concise, and make it 
+    1200 words long. Ensure the quality of the final output document by cross referencing 
+    the goals and  tasks of other agents with what is in the document. You should
+    delegate back to other agents if you find the quality of their work to be subpar.
+    Finally, rewrite the final document that was expected earlier, but now revised.
+    
+  expected_output: >
+    A finalized 1500 word document with sections for each agent's findings. Include an 
+    executive summary, key insights, and compile all the information that the other 
+    agents have gathered. 
+
+quality_assurance_task:
+  description: >
+    Ensure the quality of the final output document by cross referencing the goals and 
+    tasks of other agents with what is in the document. You should delegate back to 
+    other agents if you find the quality of their work to be subpar. Finally, rewrite 
+    the final document that was expected earlier, but now revised.
+    
+  expected_output: >
+    A quality finalized 1500 word output with sections for each agent's findings. Ensure 
+    that the document is at least 1500 words or close enough. Include an executive 
+    summary, key insights, and compile all the information that the other agents have 
+    gathered.
